@@ -1,0 +1,110 @@
+.tutorWrapper {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.header {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    color: #f1f5f9;
+}
+
+.chatContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.userMessageWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.assistantMessageWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userMessage {
+    max-width: 20rem;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    background-color: #2563eb;
+    color: white;
+    word-wrap: break-word;
+}
+
+.assistantMessage {
+    max-width: 20rem;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    background-color: #334155;
+    color: #e2e8f0;
+    word-wrap: break-word;
+}
+
+.form {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #475569;
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    background-color: #334155;
+    border: 1px solid #475569;
+    border-radius: 0.5rem;
+    color: #e2e8f0;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #f87171;
+    margin-top: 0.5rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.loadingWrapper {
+    text-align: center;
+    padding: 2.5rem;
+}

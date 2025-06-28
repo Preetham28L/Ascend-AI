@@ -1,0 +1,123 @@
+.quizContainer {
+  background-color: #1e293b; /* slate-800 */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.quizTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.topic {
+  color: #60a5fa; /* blue-400 */
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.questionCard {
+  background-color: #334155; /* slate-700 */
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.questionText {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .optionsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.optionButton {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #334155;
+  color: #e2e8f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.optionButton:hover:not(:disabled) {
+  background-color: #475569;
+}
+
+.selected {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+}
+
+.correct {
+  background-color: #16a34a; /* green-600 */
+  color: white;
+}
+
+.incorrect {
+  background-color: #dc2626; /* red-600 */
+  color: white;
+}
+
+.explanation {
+  font-size: 0.875rem;
+  color: #94a3b8; /* slate-400 */
+  margin-top: 0.5rem;
+}
+
+.submitButton {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #16a34a; /* green-600 */
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #15803d; /* green-700 */
+}
+
+.scoreText {
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.noData {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 1.5rem;
+}

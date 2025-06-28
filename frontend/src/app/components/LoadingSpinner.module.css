@@ -1,0 +1,22 @@
+.spinnerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  height: 3rem;       /* equivalent to h-12 */
+  width: 3rem;        /* equivalent to w-12 */
+  border-top: 2px solid #3b82f6; /* blue-500 */
+  border-bottom: 2px solid #3b82f6;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-radius: 9999px; /* full */
+  animation: spin 1s linear infinite;
+}
